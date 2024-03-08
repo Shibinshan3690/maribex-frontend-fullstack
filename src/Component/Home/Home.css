@@ -1,0 +1,31 @@
+.main-container{
+      width: 100%;
+      background-color: white;
+}
+.inner-container{
+    width: 935px;
+    height: 100%;
+    display: felx;
+    margin: auto;
+    margin-left: 250px;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+}
+.right-section{
+     background-color: white;
+   width: 270px;
+      margin-top: -840px;
+    padding-left: 50px;
+   margin-left: 250px;
+   padding-left: 80px;
+   float: right;
+   background-color: white;
+
+
+}
+@media only screen and (max-width:1200px){
+      .right-section{
+         right: 7px;
+      }
+}
