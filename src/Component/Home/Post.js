@@ -8,6 +8,7 @@ import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { FaRegComment } from "react-icons/fa";
 import { timeSince } from '../../Utils/Util';
 const Post = () => {
+   // const user = JSON.parse(window.localStorage.getItem('user'))
   return (
     <div  className='post-list'>
        <div className='post'>
