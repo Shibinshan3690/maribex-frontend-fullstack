@@ -24,10 +24,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/signin", formData);
+      const response = await axios.post("http://localhost:8004/api/signin", formData);
       const { token, _id, name, email, username } = response.data; 
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify({ _id, name, email, username }));
+      localStorage.setItem('userId',_id)
       navigate('/'); // page upon successful login
     } catch (error) {
       setError(error.response.data.error || 'An error occurred during login');
@@ -68,8 +69,8 @@ const Login = () => {
             <p className='forgotten-password-link'> Forgotten Your Password?</p>
           </div>
         </div>
-        <div className='box-2' >
-          <p>Don't have an account? <span className='sign-up-span'>Sign up</span></p>
+        <div className='box-2'  onClick={()=>navigate("/registration")}>
+          <p>Don't have an account? <span className='sign-up-span' >Sign up</span></p>
         </div>
         <div className='get-app-box'>
           <p>Get the app.</p>

@@ -91,16 +91,6 @@ const Sidebar = () => {
           </span>
         </button>
 
-{/* <button>
-<span>
-<i ><FaRegSquarePlus/> </i>
-<span>Create</span>
-      <DropdownButton  className='dropbutton'>
-      <Dropdown.Item  onClick={()=>navigate("/createPost")} >Post</Dropdown.Item>
-      <Dropdown.Item >Re action</Dropdown.Item>
-      </DropdownButton>
-    </span>
-    </button> */}
 
 
 <Dropdown>

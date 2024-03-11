@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../CreatePost/CreatePost.css";
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify'; // Import toast
+import 'react-toastify/dist/ReactToastify.css'; // Import CSS
 import axios from "axios";
 
 export const Createpost = () => {
@@ -19,14 +20,16 @@ export const Createpost = () => {
             formData.append('title', title);
             formData.append('body', body);
             formData.append('image', image);
-
+            const id = localStorage.getItem('userId')
             // Send formData to backend API using axios
-            const response = await axios.post('http://localhost:5000/api/createpost', formData, {
+            const response = await axios.post(`http://localhost:8003/api/createpost/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
             });
+
             console.log(response.data);
+            toast.success("Post created successfully!"); // Display success toast
         } catch (error) {
             console.error("Error creating post:", error);
         }
@@ -40,7 +43,7 @@ export const Createpost = () => {
                         <div className='login-card card-block'>
                             <div className='authbox'>
                                 <div className='col-12'>
-                                    <ToastContainer />
+                                    <ToastContainer /> {/* ToastContainer should be placed here */}
                                     <h2 className='text-center'>Create Post</h2>
                                     <br />
                                     <div className='input-group'>
@@ -69,3 +72,5 @@ export const Createpost = () => {
         </div>
     );
 };
+
+export default Createpost;

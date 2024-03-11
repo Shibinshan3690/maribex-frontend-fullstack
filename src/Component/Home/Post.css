@@ -1,12 +1,12 @@
-.post{
-width: 610px;
-height: auto;
-border: 0.5 solid rgba(0.0.0.0.201);
-margin-top: 10px;
-background-color: white;
-margin-bottom: 30px;
-margin-left: 80px;
-}
+.post {
+     width: 610px;
+     height: auto;
+     border: 0.5 solid rgba(0.0.0.0.201);
+     margin-top: 10px;
+     background-color: white;
+     margin-bottom: 30px;
+     margin-left: 80px;
+   }
 .p_d{
     
      display: flex;
