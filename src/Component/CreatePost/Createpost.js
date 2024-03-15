@@ -22,7 +22,7 @@ export const Createpost = () => {
             formData.append('image', image);
             const id = localStorage.getItem('userId')
             // Send formData to backend API using axios
-            const response = await axios.post(`http://localhost:8003/api/createpost/${id}`, formData, {
+            const response = await axios.post(`http://localhost:9001/api/createpost/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }

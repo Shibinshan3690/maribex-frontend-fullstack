@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import Sidebar from "../Sidebar/Sidebar";
 import "./profail.css";
 
+
 const Profail = () => {
+
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchUserProfile = async () => {
+      try {
+        const userId = localStorage.getItem('userId');
+        console.log(userId)
+        const response = await axios.get(`http://localhost:9001/api/getUser/${userId}`); // Assuming your backend endpoint is '/api/user/:id'
+        setUser(response.data.user);
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+
+    fetchUserProfile();
+  }, []);
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
   return (
     <>
         <div>
@@ -19,7 +44,7 @@ const Profail = () => {
         </div>
         <div className="dp-side-box">
           
-            <span className="id-name"> _shibin_shan__</span>
+            <span className="id-name"> {user.username}</span>
           
           <div>
             <button className="butns">Edit Profail</button>
@@ -30,8 +55,8 @@ const Profail = () => {
           </div>
           <div className="second-sec">
               <button className="item">1  <span>post</span></button>
-              <button  className="item">1,743  <span>followers</span></button>
-              <button  className="item">509    <span>following</span></button>      
+              <button  className="item">{user.followers.length}  <span>followers</span></button>
+              <button  className="item">{user.following}   <span>following</span></button>      
           </div>
           
           <div className="dicription">

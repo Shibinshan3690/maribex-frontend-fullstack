@@ -20,7 +20,7 @@ const Post = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("http://localhost:8004/api/allpost");
+        const response = await fetch("http://localhost:9001/api/allpost");
         const data = await response.json();
         setPosts(data.posts);
       } catch (error) {
