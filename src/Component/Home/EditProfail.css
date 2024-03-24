@@ -1,0 +1,111 @@
+.editPrifail-container{
+      margin-left: 280px;
+      margin-top: 40px;
+
+      
+}
+.heading{
+     font-weight:  600;
+     font-size:20px;
+     font-family: Helvetica, Arial, sans-serif;
+     margin-left: 10px;
+}
+.pic-box{
+    width: 700px;
+    height: 90px;
+   background-color: rgb(234, 234, 234);
+   border-radius: 20px;
+   margin-top: 40px;
+}
+.innersection{
+    
+     height: 70px;
+     width: 70px;
+     border-radius: 40px;
+    
+     background-size: cover;
+     margin-left: 10px;
+      text-align: center;
+   background-size: cover;
+      margin-bottom: -10px;
+     display: flex;
+     background-color: rgb(234, 234, 234);
+     cursor: pointer;
+}
+.image{
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    border-radius: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+ 
+.id{
+     
+      background-color: rgb(234, 234, 234);
+     
+}
+.id-name{
+     margin-top:-40px;
+     background-color: rgb(234, 234, 234);
+     margin-left: 100px;
+}
+.btnp{
+      
+       width: 96px;
+       height: 30px;
+       margin-left: 530px;
+          border: 1px solid black;
+          background-color: lightblue;
+       border-radius: 10px;
+      
+       color: #fff;
+       font-weight: 500;
+       font-family: Helvetica, Arial, sans-serif;
+      
+
+}
+.btn-div{
+      margin-top: -40px;
+      width: 200px;
+      background-color: rgb(234, 234, 234);
+}
+     
+.hed{
+    font-weight:  600;
+    font-size:19px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.input-web{
+
+    border: none;
+    background-color: rgb(234, 234, 234);
+    width: 700px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+.textarea{
+    width: 700px;
+       border:none;
+       background-color: rgb(234, 234, 234);
+}
+.select{
+       background-color:#0064e0;
+       border-radius: 20px;
+       color: #fff;
+       font-family: sans-serif;
+}
+.bttn{
+      margin-left: 600px;
+      width: 100px;
+      background-color: #0064e0;
+      border-radius: 20px;
+      color: #fff;
+      font-family: sans-serif;
+      border: none;
+
+}

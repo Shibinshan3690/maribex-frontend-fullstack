@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import Sidebar from "../Sidebar/Sidebar";
 import "./profail.css";
+import { useNavigate } from "react-router-dom";
 
 
 const Profail = () => {
@@ -9,6 +10,7 @@ const Profail = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate=useNavigate();
 
   useEffect(() => {
     const fetchUserProfile = async () => {
@@ -57,10 +59,10 @@ const Profail = () => {
         </div>
         <div className="dp-side-box">
           
-            <span className="id-name"> {user.username}</span>
+            <span className="idd-name"> {user.username}</span>
           
           <div>
-            <button className="butns">Edit Profail</button>
+            <button className="butns" onClick={()=>navigate("/EditProfail")}>Edit Profail</button>
             <button className="butns">View archive</button>
             <button className="butns">Ad tools</button>
           </div>

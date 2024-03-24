@@ -1,4 +1,4 @@
-.post {
+/* .post {
      width: 610px;
      height: auto;
      border: 0.5 solid rgba(0.0.0.0.201);
@@ -150,4 +150,203 @@ object-fit: cover;
      border: none;
      background-color: #fff;
 
-}
+} */
+
+
+
+
+:root{
+     --liteColor:rgb(198, 196, 196);
+ }
+ 
+ .main{
+     width: 100%;
+     height: 100Vh;
+     display: flex;
+     margin-left: 130px;
+ 
+     
+    
+ }
+ .sideMenu{
+     height: 100vh;
+     width: 20%;
+     border-right: 1px solid var(--liteColor);
+ }
+ .container{
+     height: 100vh;
+     width: 80%;
+
+ }
+ .post{
+     height: 100vh;
+     width: 70%;
+     /* background: pink; */
+ }
+ .suggestion{
+     height: 100vh;
+     width: 30%;
+     padding:35px 15px 0 0;
+ }
+ .logo{
+     padding: 25px 0 10px 20px;
+ }
+ .row{
+     display: flex;
+     align-items: center;
+     padding: 0px 0 10px 20px;
+   
+ }
+ h4{
+     padding-left: 15px;
+     margin: 14px 0;
+     font-weight: 400;
+ }
+ .active{
+     font-weight: 700; 
+ }
+ .cust_row{
+     display: flex;
+     align-items: center;
+     padding: 0px 0 10px 10px;
+ }
+ .profile{
+     height: 30px;
+     width: 30px;
+     border: 1px solid var(--liteColor);
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .status{
+     padding: 30px 15px 5px 5px;
+ }
+ .subStatus{
+     height: 60px;
+     width: 60px;
+     border-radius: 30px;
+     border: 1px solid var(--liteColor);
+     background-image: url('../Assets/me.png');
+     background-position: center;
+     background-size: cover;
+ }
+ .ellipsis{
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+     width: 50px;
+     font-size: 12px;
+     color: var(--liteColor);
+     text-align: center;
+ }
+ .commonRow{
+     display: flex;
+ }
+ .name{
+     text-align: center;
+ }
+ .postProfile{
+     height: 40px;
+     width: 40px;
+     border-radius: 25px;
+     border: 1px solid var(--liteColor);
+     background-image: url('../Assets/me.png');
+     background-position: center;
+     background-size: cover;
+ }
+ .postName{
+     font-weight:600;
+ }
+ .postDay{
+        color: gray;
+     font-size: 11px;
+     font-weight: 300;
+
+ }
+ .PostDesc{
+     font-size: 12px;
+ }
+ .postRow{
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+
+ .button{
+       border:none;
+       padding-right: 5px;
+      
+ }
+ .liked{
+     position: relative;
+ }
+ .likedProfile{
+     height: 15px;
+     width: 15px;
+     border-radius: 10px;
+     border: 1px solid var(--liteColor);
+     background-image: url('../Assets/me.png');
+     background-position: center;
+     background-size: cover;
+     position: absolute;
+ }
+ .likedProfile1{
+     height: 15px;
+     width: 15px;
+     border-radius: 10px;
+     border: 1px solid var(--liteColor);
+     background-image: url('../Assets/person.jpg');
+     background-position: center;
+     background-size: cover;
+     position: absolute;
+     left: 8px;
+     z-index: 1;
+ }
+ .likeCount{
+     padding-left:30px ;
+     font-size: 14px;
+     font-weight: 600;
+ }
+ .addComment{
+     color: var(--liteColor);
+ }
+ .commentBorder{
+     padding-top: 9px;
+     border-bottom: 1px solid var(--liteColor);
+ }
+ .emojiSize{
+     font-size: 20px;
+ }
+ .suggestionProfile{
+     padding-left: 9px;
+ }
+ .Suggested{
+     padding: 20px 0;
+ }
+ .seeAll{
+     font-weight: 500;
+     font-size: 13px;
+ }
+ .followedBy{
+     color: var(--liteColor);
+     font-size: 12px;
+ }
+ .pding{
+     padding-bottom: 15px;
+ }
+ .switch{
+     color: rgb(6, 184, 255);
+     font-size: 12px;
+ }
+ .postContainer{
+       margin-top: 130px;
+      margin-left: -560px;
+      width: 400px;
+      height: 470px;
+     
+ }
+ .img{
+      height: 400px;
+      width: 400px;
+ }

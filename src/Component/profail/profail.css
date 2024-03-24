@@ -35,10 +35,12 @@
         background-color: rgb(227, 227, 227);
        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
- .id-name{
+ .idd-name{
  font-size: 20px;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  font-weight: 100;
+border: none;
+background-color: #fff;
     }
 .second-sec{
  margin-left: 620px;

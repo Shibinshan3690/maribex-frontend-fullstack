@@ -8,6 +8,7 @@ import Registration from './Component/Registration/Registration'
 import Home from './Component/Home/Home'
 import { Createpost } from './Component/CreatePost/Createpost'
 import Profail from './Component/profail/Profail.js'
+import EditProfail from './Component/Home/EditProfail.js'
 
 
 
@@ -18,11 +19,11 @@ const App = () => {
         <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/registration' element={<Registration/>}></Route>
           <Route path="/createPost" element={<Createpost/>}></Route>
           <Route path='/profail'  element={<Profail/>}></Route>
+          <Route path='/EditProfail' element={<EditProfail/>}></Route>
           
         </Routes>
         </BrowserRouter>

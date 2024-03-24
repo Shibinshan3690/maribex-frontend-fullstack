@@ -114,7 +114,7 @@ const Sidebar = () => {
 
         <button  onClick={()=>navigate("/profail")} >
           <span>
-            {/* <img src="Profile.svg" /> */}
+            <img src="Profile.svg"  style={{borderRadius:"10px"}}/>
             <span >Profile</span>
           </span>
         </button>
